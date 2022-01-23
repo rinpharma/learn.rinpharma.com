@@ -1,0 +1,30 @@
+---
+title: "About"
+description: |
+  About learn.rinpharma.com
+---
+
+* learn.rinpharma.com information
+
+### About
+
+Our hope is that learn.rinpharma.com will help pharma professionals learn the latest data science skills via community discussions on key ideas/initiatives, hands on workshops and online learnings. Like our conference, we hope for this page to provide free, world-class education where you can learn by doing and build confidence in practical R in Pharma skills. We will try to provide live environments where you can play with the code/analysis to help professionals develop the skills needed for the top priorities in the drug development space.
+
+Our articles will help gain new knowledge and skills in a variety of ways, from engaging video lectures, write-ups and hands-on cloud environments with live code with no installation required
+
+Each lab includes challenges with step-by-step instructions and access to pre-configured cloud environments. This gives you an efficient way to practice what you are learning and expand knowledge beyond just reading.
+
+### Community Adoption
+
+How hope is that this effort will help expand the communities curriculum through rinpharma blended learning efforts. We hope this will provide pharmas with access to high-quality, domain-specific training materials and further micro-courses can be built with this material. 
+
+## The following tools are used in our learnign efforts:
+
+* [`RStudio Cloud`](https://rstudio.cloud/): `RStudio Cloud` is a cRStudio Cloud is a lightweight, cloud-based solution that allows anyone to do, share, teach and learn data science online
+* [`Rmarkdown`](http://rmarkdown.rstudio.com/index.html): `Rmarkdown` is a package for `R` that combines simple `markdown` authoring tools for formatting text with chunks of `R` code; when compiled using [`knitr`](http://yihui.name/knitr/) the resulting output is a formatted document that contains the results of executing the embedded `R` code. Although `Rmarkdown` can produce files in a variety of formats, the two of particular interest in this project are `html` and `pdf` formats. 
+* [`RStudio`](https://www.rstudio.com/home/): `RStudio` is an integrated development environment that, among other features, provides a console for running `R`, a window for editing files, a window for managing files, a window for viewing plots, a window for viewing help files, and an internal browser window of viewing dynamic content. `RStudio` also provides tools for automating many tasks. Although `RStudio` is a convenient way to manage this project, it is not a requirement as it simply provides a way to work with `R` and `Rmarkdown`.
+* `R Packages`: One of the strengths of `R` is the availability of packages of `R` functions that are designed to work with data. The materials in this project, for example, use the [`Distill`](https://rstudio.github.io/distill/) package to create our online learnings.
+
+See the link below for more info:
+
+http://rmarkdown.rstudio.com/rmarkdown_websites.html

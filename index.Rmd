@@ -1,0 +1,34 @@
+---
+title: "learn.rinpharma.com"
+description: |
+  Welcome to R in Pharma's learning website. Here you can find information about various applications of R in Pharma!
+site: distill::distill_website
+---
+
+This website is a collection of efforts and *learning paths* for people interested in R in Pharma. R in Pharma has been hosting workshops and learning sessions since its first conference at Harvard University in 2018. Here you can find the videos and resources. R in Pharma collaborates with many people in the pharma and life sciences space to gather these resources and we are thankful for their efforts!
+
+### References
+
+A collection of external references that users might find useful. Where possible, links to the sources are included.
+
+@Book{xie2015,
+  title = {Dynamic Documents with {R} and knitr},
+  author = {Yihui Xie},
+  publisher = {Chapman and Hall/CRC},
+  address = {Boca Raton, Florida},
+  year = {2015},
+  edition = {2nd},
+  note = {ISBN 978-1498716963},
+  url = {http://yihui.name/knitr/},
+}
+
+@article{shankar2014assessment,
+  title={Assessment and reporting of the clinical immunogenicity of therapeutic proteins and peptides-harmonized terminology and tactical recommendations},
+  author={Shankar, Gopi and Arkin, S and Cocea, L and Devanarayan, V and Kirshner, S and Kromminga, A and Quarmby, V and Richards, S and Schneider, CK and Subramanyam, M and others},
+  journal={The AAPS journal},
+  volume={16},
+  number={4},
+  pages={658--673},
+  year={2014},
+  publisher={Springer}
+}

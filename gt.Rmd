@@ -1,0 +1,11 @@
+---
+title: "R in Pharma gt public webinar"
+description: |
+  Below you will find info on the gt webinar
+---
+
+R in Pharma _2022_ gt webinar info is below:
+
+### Vidoes
+
+## Python

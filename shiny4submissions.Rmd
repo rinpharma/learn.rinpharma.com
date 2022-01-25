@@ -1,0 +1,21 @@
+---
+title: "Shiny for Submissions"
+description: |
+  Information about the Shiny for Submissions Task Force
+---
+
+Shiny has always been a big part of RinPharma. Joe Cheng did a Keynote in 2018 (https://rinpharma.com/publication/rinpharma_33/), helped create Shinymeta in 2019, we held the popular "Unleash Shiny" in 2020 that sold out in hours and we held multiple workshops & talks on Shiny in 2021!
+
+In 2020 we announced our future efforts around Shiny at the RStudio conference:
+
+https://www.youtube.com/watch?v=3sU_ehLtQWM
+
+We are now So excited to announce the launch of the "Shiny for Submissions" Task Force here in 2022! We are planning to have a monthly meeting (last thur) and quarterly workshops for the public. The workshop and learnings will be featured for the public on learn.rinpharma.com.
+
+#### Meeting notes
+
+Jan 27th 2022
+
+_**Notes**_
+
+

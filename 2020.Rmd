@@ -1,0 +1,13 @@
+---
+title: "R in Pharma 2020 Conf Workshops"
+description: |
+  Below you will find the links to the 2020 workshops
+---
+
+R in Pharma _2020_ conf workshops are below. 
+
+### Vidoes
+
+## Python
+
+

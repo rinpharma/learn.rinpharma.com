@@ -1,0 +1,11 @@
+---
+title: "R in Pharma admiral public webinar"
+description: |
+  Below you will find info on the admiral webinar
+---
+
+R in Pharma _2022_ admiral webinar info is below:
+
+### Vidoes
+
+## Python

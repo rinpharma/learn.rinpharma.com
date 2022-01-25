@@ -1,0 +1,21 @@
+---
+title: "R in Pharma Submissions Perspectives"
+description: |
+  Below you will find info on doing submissions in R from various learner profiles
+---
+
+Perspectives & Roles of people engaged in submissions Process:
+
+Stats Programming
+
+Regulatory Reviewer
+
+Medical Writing
+
+IT
+
+R Admin
+
+### Vidoes
+
+## Python

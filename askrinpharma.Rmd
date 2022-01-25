@@ -1,0 +1,9 @@
+---
+title: "Ask R in Pharma a Question"
+description: |
+  Ask R in Pharma
+---
+
+### About
+
+Do you have questions about the use of R in Pharma? Ask your question here and it may be selected by our editors for our monthly response.

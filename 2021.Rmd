@@ -1,0 +1,11 @@
+---
+title: "R in Pharma 2021 Conf Workshops"
+description: |
+  Below you will find the links to the 2021 workshops
+---
+
+R in Pharma _2021_ conf workshops are below. 
+
+### Vidoes
+
+## Python

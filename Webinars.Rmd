@@ -1,9 +1,0 @@
----
-title: "Public Webinars"
-description: |
-  Additional details about our public webinars
----
-
-### General Reference Texts
-
-## Statistical Analysis

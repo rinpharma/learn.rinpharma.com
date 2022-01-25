@@ -4,10 +4,32 @@ description: |
   Below you will find the links to the 2020 workshops
 ---
 
-R in Pharma _2020_ conf workshops are below. 
+R in Pharma _2020_ had 11 conf workshops:
+
+https://rinpharma.com/event/rinpharma2020/
+
+The recordings can be found at the R in Pharma youtube channel here:
 
 ### Vidoes
 
-## Python
+https://www.youtube.com/c/RinPharma/
 
+## PMultilingual Markdown with R and Python Using Reticulate
 
+https://www.youtube.com/watch?v=fEoZynvUrkc&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=1
+
+## Implementing a Risk-based Approach to R Validation
+
+https://www.youtube.com/watch?v=9AiJSEZAz4g&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=2
+
+## gt
+
+https://www.youtube.com/watch?v=puzMITLVrqE&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=3
+
+## A PK & PBPK Modelling Workflow in R: Simulation, Optimization & Visualization
+
+https://www.youtube.com/watch?v=EbDeZ5PgNlQ&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=4
+
+## Tidy Transcriptomics
+
+https://www.youtube.com/watch?v=6HNjZVBArmQ&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=5

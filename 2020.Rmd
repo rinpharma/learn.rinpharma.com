@@ -14,7 +14,7 @@ The recordings can be found at the R in Pharma youtube channel here:
 
 https://www.youtube.com/c/RinPharma/
 
-## PMultilingual Markdown with R and Python Using Reticulate
+## Multilingual Markdown with R and Python Using Reticulate
 
 https://www.youtube.com/watch?v=fEoZynvUrkc&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=1
 

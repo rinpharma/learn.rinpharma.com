@@ -35,6 +35,10 @@ navbar:
           href: admiral.html
         - text: "gt"
           href: gt.html
+        - text: "renv"
+          href: renv.html
+        - text: "versioncontrol"
+          href: versioncontrol.html
     - icon: fab fa-github
       href: https://github.com/rstudio/distil
 output: distill::distill_article

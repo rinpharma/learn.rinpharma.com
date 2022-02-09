@@ -7,9 +7,9 @@ site: distill::distill_website
 
 This website is a collection of efforts and *learning paths* for people interested in R in Pharma. R in Pharma has been hosting workshops and learning sessions since its first conference at Harvard University in 2018. Here you can find the videos and resources. R in Pharma collaborates with many people in the pharma and life sciences space to gather these resources and we are thankful for their efforts!
 
-Starting in 2022, R in Pharma is focusing more on its learning efforts and bring content here to learn.rinpharma.com!
+R in Pharma is focusing more on its learning efforts and bringing community content here to learn.rinpharma.com!
 
-Feel free to reach out if you have ideas for webinars, have questions about GxP reporting, need help for an internal event or interested in our Task Forces.
+Feel free to reach out if you have ideas for webinars, questions about GxP reporting, help for an internal events or interested in our Task Forces.
 
 https://rinpharma.com/contact/
 

@@ -13,6 +13,8 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Internal Seminar"
+      href: internal-seminar.html
     - text: "Ask RinPharma"
       href: askrinpharma.html
     - text: "Submissions"

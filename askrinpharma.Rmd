@@ -6,4 +6,16 @@ description: |
 
 ### About
 
-Do you have questions about the use of R in Pharma? Ask your question here and it may be selected by our editors for our monthly response.
+Do you have questions about the use of R in Pharma? Ask your question using the link or email below and it may be selected by our editors for our monthly response which will be featured via our featured write-up...
+
+https://rinpharma.com/contact/
+
+info @ rinpharma .com
+
+Have you wondered how to develop ADaM datasets in R?
+
+Looking for guidance on writing tables out to RTF?
+
+Is your team building processes for TLFs and looking for the R packages to use?
+
+Feel free to ask via the form above!

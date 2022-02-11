@@ -18,4 +18,19 @@ Jan 27th 2022
 
 _**Notes**_
 
+For our first meeting, we reviewed the Current State of Shiny for submissions as detailed here:
+
+[Current State](https://docs.google.com/document/d/1Koi0K_2P5Y827eAc2HzhYGWTE4Ws60t2iTFwVxUBkWU/edit?usp=sharing)
+
+WE then discssed as a group, the areas of focus as highlighted below:
+
+![Focus Areas](images/focus.png)
+The top 2 areas being data exploration and dynamic data displays.
+
+We then discussed these items in detail as outlined in the meeting mins here:
+
+[Minutes](https://docs.google.com/document/d/17hInpK3B9dckXvf9wCNANl31chBmZ_TGwDOlkuzHfTE/edit?usp=sharing)
+
+Our next meeting is Thur 24th of Feb 22.
+
 

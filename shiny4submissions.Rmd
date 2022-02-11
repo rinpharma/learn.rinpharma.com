@@ -22,10 +22,10 @@ For our first meeting, we reviewed the Current State of Shiny for submissions as
 
 [Current State](https://docs.google.com/document/d/1Koi0K_2P5Y827eAc2HzhYGWTE4Ws60t2iTFwVxUBkWU/edit?usp=sharing)
 
-WE then discssed as a group, the areas of focus as highlighted below:
+We then discussed as a group, the areas of focus as highlighted below:
 
 ![Focus Areas](images/focus.png)
-The top 2 areas being data exploration and dynamic data displays.
+The top 2 areas being data exploration and dynamic data displays. Open the image in a new tab to see it larger.
 
 We then discussed these items in detail as outlined in the meeting mins here:
 

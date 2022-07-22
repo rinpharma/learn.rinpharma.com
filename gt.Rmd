@@ -6,6 +6,8 @@ description: |
 
 R in Pharma _2022_ Clinical Tables in R with gt workshop info is below:
 
+Big Thank you to Alexandra Lauer, Eric Simms & Hengwei Liu for the amazing help in putting this session together!!!
+
 ### Register
 
 https://www.eventbrite.com/e/clinical-tables-in-r-with-gt-tickets-388304237427

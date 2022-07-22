@@ -6,7 +6,7 @@
       "description": "Below you will find the links to the 2020 workshops",
       "author": [],
       "contents": "\nR in Pharma 2020 had 11 conf workshops:\nhttps://rinpharma.com/event/rinpharma2020/\nThe recordings can be found at the R in Pharma youtube channel\nhere:\nVidoes\nhttps://www.youtube.com/c/RinPharma/\nMultilingual\nMarkdown with R and Python Using Reticulate\nhttps://www.youtube.com/watch?v=fEoZynvUrkc&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=1\nImplementing\na Risk-based Approach to R Validation\nhttps://www.youtube.com/watch?v=9AiJSEZAz4g&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=2\ngt\nhttps://www.youtube.com/watch?v=puzMITLVrqE&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=3\nA\nPK & PBPK Modelling Workflow in R: Simulation, Optimization &\nVisualization\nhttps://www.youtube.com/watch?v=EbDeZ5PgNlQ&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=4\nTidy Transcriptomics\nhttps://www.youtube.com/watch?v=6HNjZVBArmQ&list=PLMtxz1fUYA5Csj-8wOIpHoegRcglQFaad&index=5\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:50+00:00"
+      "last_modified": "2022-07-22T20:12:35+00:00"
     },
     {
       "path": "2021.html",
@@ -14,7 +14,7 @@
       "description": "Below you will find the links to the 2021 workshops",
       "author": [],
       "contents": "\nR in Pharma 2021 had 14 conf workshops:\nhttps://rinpharma.com/event/rinpharma2021/\nThe recordings can be found at the R in Pharma youtube channel\nhere:\nVidoes\nhttps://www.youtube.com/c/RinPharma/\nUnleash Shiny\nhttps://www.youtube.com/watch?v=p6ilISM_70U&ab_channel=RinPharma\nSafetyGraphics\nhttps://www.youtube.com/watch?v=wa3NHKazyew&ab_channel=RinPharma\nTidy Transcriptomics\nhttps://www.youtube.com/watch?v=lpX-dDM7GYk\nRStudio Connect - Admin\nhttps://www.youtube.com/watch?v=H__CTvkI-8w&ab_channel=RinPharma\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:51+00:00"
+      "last_modified": "2022-07-22T20:12:36+00:00"
     },
     {
       "path": "about.html",
@@ -22,7 +22,7 @@
       "description": "About learn.rinpharma.com",
       "author": [],
       "contents": "\nlearn.rinpharma.com information\nAbout\nOur hope is that learn.rinpharma.com will help pharma professionals\nlearn the latest data science skills via community discussions on key\nideas/initiatives, hands on workshops and online learnings. Like our\nconference, we hope for this page to provide free, world-class education\nwhere you can learn by doing and build confidence in practical R in\nPharma skills. We will try to provide live environments where you can\nplay with the code/analysis to help professionals develop the skills\nneeded for the top priorities in the drug development space.\nOur articles will help gain new knowledge and skills in a variety of\nways, from engaging video lectures, write-ups and hands-on cloud\nenvironments with live code with no installation required\nOur soon to be created labs will include challenges with step-by-step\ninstructions and access to pre-configured cloud environments. This will\ngive you an efficient way to practice what you are learning and expand\nknowledge beyond just reading. Keep an eye out for this in\n2023/2024.\nCommunity Adoption\nHow hope is that this effort will help expand the communities\ncurriculum through rinpharma blended learning efforts. We hope this will\nprovide pharmas with access to high-quality, domain-specific training\nmaterials and further micro-courses can be built with this material.\nThe\nfollowing tools are used in our learning efforts:\nRStudio Cloud:\nRStudio Cloud is a cRStudio Cloud is a lightweight,\ncloud-based solution that allows anyone to do, share, teach and learn\ndata science online\nRmarkdown:\nRmarkdown is a package for R that combines\nsimple markdown authoring tools for formatting text with\nchunks of R code; when compiled using knitr the resulting\noutput is a formatted document that contains the results of executing\nthe embedded R code. Although Rmarkdown can\nproduce files in a variety of formats, the two of particular interest in\nthis project are html and pdf formats.\nR Packages: One of the strengths of R is\nthe availability of packages of R functions that are\ndesigned to work with data. The materials in this project, for example,\nuse the Distill\npackage to create our online learnings.\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:52+00:00"
+      "last_modified": "2022-07-22T20:12:37+00:00"
     },
     {
       "path": "askrinpharma.html",
@@ -30,15 +30,15 @@
       "description": "Ask R in Pharma",
       "author": [],
       "contents": "\nAbout\nDo you have questions about the use of R in Pharma? Ask your question\nusing the link or email below and it may be selected by our editors for\nour monthly response which will be featured via our featured\nwrite-up…\nhttps://rinpharma.com/contact/\ninfo @ rinpharma .com\nHave you wondered how to develop ADaM datasets in R?\nLooking for guidance on writing tables out to RTF?\nIs your team building processes for TLFs and looking for the R\npackages to use?\nFeel free to ask via the form above!\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:52+00:00"
+      "last_modified": "2022-07-22T20:12:38+00:00"
     },
     {
       "path": "gt.html",
       "title": "R in Pharma gt public workshop",
       "description": "Below you will find info on the gt workshop",
       "author": [],
-      "contents": "\nR in Pharma 2022 Clinical Tables in R with gt workshop info\nis below:\nRegister\nhttps://www.eventbrite.com/e/clinical-tables-in-r-with-gt-tickets-388304237427\nDate\nDate and time Wed, 31 August 2022 10:00 AM – 1:00 PM EDT\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:53+00:00"
+      "contents": "\nR in Pharma 2022 Clinical Tables in R with gt workshop info\nis below:\nRegister\nhttps://www.eventbrite.com/e/clinical-tables-in-r-with-gt-tickets-388304237427\nDate\nDate and time Wed, 31 August 2022 10:00 AM – 1:00 PM EDT\ncertificate of attendance/completion can be provided if needed.\n\n\n\n",
+      "last_modified": "2022-07-22T20:12:39+00:00"
     },
     {
       "path": "index.html",
@@ -46,7 +46,7 @@
       "description": "Welcome to R in Pharma's learning website. Here you can find information about various applications of R in Pharma!\n",
       "author": [],
       "contents": "\nThis website is a collection of efforts and learning paths\nfor people interested in R in Pharma. R in Pharma has been hosting\nworkshops and learning sessions since its first conference at Harvard\nUniversity in 2018. Here you can find the videos and resources. R in\nPharma collaborates with many people in the pharma and life sciences\nspace to gather these resources and we are thankful for their\nefforts!\nR in Pharma is focusing more on its learning efforts and bringing\ncommunity content here to learn.rinpharma.com!\nFeel free to reach out if you have ideas for webinars, questions\nabout GxP reporting, help for an internal events or interested in our\nTask Forces.\nhttps://rinpharma.com/contact/\ninfo @ rinpharma .com\nWe will feature our learning efforts at our fall gathering!\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:54+00:00"
+      "last_modified": "2022-07-22T20:12:40+00:00"
     },
     {
       "path": "internal-seminar.html",
@@ -54,7 +54,7 @@
       "description": "Are you looking to host an internal R in Pharma event?",
       "author": [],
       "contents": "\nR in Pharma runs one of the largest Open Source pharma gatherings and\ntraining events in the world. Are you looking to host similar events\nwithin your organization?\nCommunity Adoption\nWe look forward to continuing our partnership with the user community\nto build relevant session content for our Open Source audience at our\nmain fall gathering. Please feel free to reach out on how we can help\nwith your internal event as well:\nhttps://rinpharma.com/contact/\ninfo @ rinpharma .com\nHosting an internal R\nin Pharma Seminar\nR in Pharma helps support various internal R events from Training\nDays, to R Hackathons to Internal Conferences. Are you looking to better\nengage and unite your open source developers?\nR in Pharma is committed to our users community and we are happy to\nhelp advise on how to enhance or start your own internally at your\norganization.\nOur team can help collaborate with your event efforts to help bring\nrelevant content and information. We can help develop more tailored\ntraining and experiences for your Open Source audience.\nLooking\nto start a Open Source Competency Center vs Center of Excellence\nHave you started an Open Source Competency Center and planning\nevents? Feel free to reach out to R in Pharma for help about speakers,\nmeetups & developing your site and tech.\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:55+00:00"
+      "last_modified": "2022-07-22T20:12:40+00:00"
     },
     {
       "path": "pharmaradmin.html",
@@ -62,7 +62,7 @@
       "description": "Information about the Pharma R Admin Task Force",
       "author": [],
       "contents": "\nNext Meeting is: Thursday, September 8⋅12:00 –\n1:00pm, Monthly on the second Thursday\nR in Pharma has focused on administering since our fist gathering.\nThe Pharma R Admin Task Force is focused on bringing together R admins\nin pharma. Our focus is tackling administering open source in various\npharma settings. Our group also helps train R admins via our training\ncourse held quarterly (planned). The trainings help provide admins with\nvirtual machines they can use to exploring R, packages and RStudio. The\ncourse will provide insights into identifying and fixing errors and best\npractices. In the course, you will set up a sandbox environment and\nlearn how to use RStudio Team through practical exercises. We provide\nyou with a virtual environment in the cloud that you can connect to via\nSSH and browser.\nOne idea is having an Pharma R Admin certification available to those\nthat complete the course (under development).\nKeep an eye out for our workshops, panels and talks at R in Pharma\n2022!\nMeeting notes\nThur 12th of May 22.\nTopic: RinPharma: Pharma R Admin Task Force Date: May 12, 2022 12:01\nPM Indiana (East)\nMeeting Recording: https://rstudio.zoom.us/rec/share/DcyUkx6Vkgkq9cwDeq2XY4k8M7odXkxngIUnIQsWkkfqqCr42vrcBOElTJNUptfo.j7SO3xzbtfmxfeOa\nAccess Passcode: rinpharma_radmin_051222\nNotes\nWE decided on this being a quarterly meeting.\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:55+00:00"
+      "last_modified": "2022-07-22T20:12:41+00:00"
     },
     {
       "path": "R-Center-Excellence.html",
@@ -70,7 +70,7 @@
       "description": "Below you will find info on the Pfizer webinar",
       "author": [],
       "contents": "\nR in Pharma 2022 Building an R Center of Excellence | Data\nScience Hangout | Mike Smith, Pfizer webinar info is below:\nVidoes\nhttps://www.youtube.com/watch?v=Dy1R2-jEeJQ&ab_channel=RStudio\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:56+00:00"
+      "last_modified": "2022-07-22T20:12:42+00:00"
     },
     {
       "path": "r4csr.html",
@@ -78,7 +78,7 @@
       "description": "Below you will find info on the RStudio Pharma Meetup: R for Clinical Study Reports & Submission webinar",
       "author": [],
       "contents": "\nR in Pharma 2022 RStudio Pharma Meetup: R for Clinical Study\nReports & Submission webinar info is below:\nVideo\nhttps://www.youtube.com/watch?v=RBVqKi3FV30&ab_channel=RStudio\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:57+00:00"
+      "last_modified": "2022-07-22T20:12:43+00:00"
     },
     {
       "path": "shiny4submissions.html",
@@ -86,7 +86,7 @@
       "description": "Information about the Shiny for Submissions Task Force",
       "author": [],
       "contents": "\nNext Meeting is: Thursday, July 28 12:00 – 1:00pm\nest, Monthly on the last Thursday\nShiny has always been a big part of RinPharma. Joe Cheng did a\nKeynote in 2018 (https://rinpharma.com/publication/rinpharma_33/), helped\ncreate Shinymeta in 2019, we held the popular “Unleash Shiny” in 2020\nthat sold out in hours and we held multiple workshops & talks on\nShiny in 2021! In 2020 we announced our future efforts around Shiny at\nthe RStudio conference: https://www.youtube.com/watch?v=3sU_ehLtQWM\nWe are now So excited to announce the launch of the “Shiny for\nSubmissions” Task Force here in 2022! We are planning to have a monthly\nmeeting (last thur) and quarterly workshops for the public. The workshop\nand learnings will be featured for the public on\nlearn.rinpharma.com.\nMeeting notes\nThur 26th of May 22.\nTopic: RinPharma: Shiny for Submissions Task Force Date: May 26, 2022\n12:01 PM Indiana (East)\nMeeting Recording: https://rstudio.zoom.us/rec/share/rdHnVdcREL2p8YfAYA-U3ZT5ozuedRAmNwutyLYK86X51M9ueMXBdFsczNm4BmuT.pjXLfUU9hWFB8OML\nAccess Passcode: rinpharma_shiny_052622\nhttps://www.youtube.com/watch?v=mh0HMPqLyhQ&ab_channel=RinPharma\nThur 24th of Feb 22.\nTopic: RinPharma: Shiny for Submissions Task Force Date: Feb 24, 2022\n11:55 AM Indiana (East)\nMeeting Recording: https://rstudio.zoom.us/rec/share/R0_njE53ZMyIrpRQs3HlpzmVf-umASnFS503IP3pNviPGejdlk6jOqq-SYDH9sXp.74zgr-HG7JRskh24\nAccess Passcode: rinpharma_shiny_022822\nJan 27th 2022\nNotes\nFor our first meeting, we reviewed the Current State of Shiny for\nsubmissions as detailed here:\nCurrent\nState\nWe then discussed as a group, the areas of focus as highlighted\nbelow:\n The top 2 areas\nbeing data exploration and dynamic data displays. Open the image in a\nnew tab to see it larger.\nWe then discussed these items in detail as outlined in the meeting\nmins here:\nMinutes\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:58+00:00"
+      "last_modified": "2022-07-22T20:12:44+00:00"
     },
     {
       "path": "submissions.html",
@@ -94,7 +94,7 @@
       "description": "Below you will find info on doing submissions in R",
       "author": [],
       "contents": "\nPresentation\nhttps://colorado.rstudio.com/rsc/Transitioning_R_FDA_Submissions/Transitioning_R_FDA_Submissions.html#1\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:59+00:00"
+      "last_modified": "2022-07-22T20:12:45+00:00"
     },
     {
       "path": "Webinars.html",
@@ -102,7 +102,7 @@
       "description": "Additional details about our public webinars",
       "author": [],
       "contents": "\nGeneral Reference Texts\nStatistical Analysis\n\n\n\n",
-      "last_modified": "2022-07-22T19:49:59+00:00"
+      "last_modified": "2022-07-22T20:12:46+00:00"
     }
   ],
   "collections": []

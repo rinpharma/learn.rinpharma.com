@@ -3,13 +3,25 @@ title: "Shiny for Submissions"
 description: |
   Information about the Shiny for Submissions Task Force
 ---
-**Next Meeting is:** Thursday, March 31⋅12:00 – 1:00pm Monthly on the last Thursday
+**Next Meeting is:** Thursday, July 28 12:00 – 1:00pm est, Monthly on the last Thursday
 
 Shiny has always been a big part of RinPharma. Joe Cheng did a Keynote in 2018 (https://rinpharma.com/publication/rinpharma_33/), helped create Shinymeta in 2019, we held the popular "Unleash Shiny" in 2020 that sold out in hours and we held multiple workshops & talks on Shiny in 2021! In 2020 we announced our future efforts around Shiny at the RStudio conference: https://www.youtube.com/watch?v=3sU_ehLtQWM
 
 We are now So excited to announce the launch of the "Shiny for Submissions" Task Force here in 2022! We are planning to have a monthly meeting (last thur) and quarterly workshops for the public. The workshop and learnings will be featured for the public on learn.rinpharma.com.
 
 ## Meeting notes
+
+# Thur 26th of May 22.
+
+Topic: RinPharma: Shiny for Submissions Task Force
+Date: May 26, 2022 12:01 PM Indiana (East)
+
+Meeting Recording:
+https://rstudio.zoom.us/rec/share/rdHnVdcREL2p8YfAYA-U3ZT5ozuedRAmNwutyLYK86X51M9ueMXBdFsczNm4BmuT.pjXLfUU9hWFB8OML
+
+Access Passcode: rinpharma_shiny_052622
+
+https://www.youtube.com/watch?v=mh0HMPqLyhQ&ab_channel=RinPharma
 
 # Thur 24th of Feb 22.
 

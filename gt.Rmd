@@ -1,11 +1,17 @@
 ---
-title: "R in Pharma gt public webinar"
+title: "R in Pharma gt public workshop"
 description: |
-  Below you will find info on the gt webinar
+  Below you will find info on the gt workshop
 ---
 
-R in Pharma _2022_ gt webinar info is below:
+R in Pharma _2022_ Clinical Tables in R with gt workshop info is below:
 
-### Vidoes
+### Register
 
-## Python
+https://www.eventbrite.com/e/clinical-tables-in-r-with-gt-tickets-388304237427
+
+### Date
+
+Date and time
+Wed, 31 August 2022
+10:00 AM – 1:00 PM EDT

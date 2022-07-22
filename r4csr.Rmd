@@ -1,0 +1,11 @@
+---
+title: "RStudio Pharma Meetup: R for Clinical Study Reports & Submission"
+description: |
+  Below you will find info on the RStudio Pharma Meetup: R for Clinical Study Reports & Submission webinar
+---
+
+R in Pharma _2022_ RStudio Pharma Meetup: R for Clinical Study Reports & Submission webinar info is below:
+
+### Video
+
+https://www.youtube.com/watch?v=RBVqKi3FV30&ab_channel=RStudio

@@ -3,15 +3,26 @@ title: "Pharma R Admin"
 description: |
   Information about the Pharma R Admin Task Force
 ---
+**Next Meeting is:** Thursday, September 8⋅12:00 – 1:00pm, Monthly on the second Thursday
 
-R in Pharma has focused on administering since our fist gathering. The Pharma R Admin Task Force is focused on bringing together R admins in pharma. Our focus is tackling administering R in various pharma settings. Our group also helps train R admins via our training course held quarterly. The training help provide admins with virtual machines they can use to exploring R, packages and RStudio. The course will provide insights into identifying and fixing errors and best practices. In the course, you will set up a sandbox environment and learn how to use RStudio Team through practical exercises. We provide you with a virtual environment in the cloud that you can connect to via SSH and browser.
+R in Pharma has focused on administering since our fist gathering. The Pharma R Admin Task Force is focused on bringing together R admins in pharma. Our focus is tackling administering open source in various pharma settings. Our group also helps train R admins via our training course held quarterly (planned). The trainings help provide admins with virtual machines they can use to exploring R, packages and RStudio. The course will provide insights into identifying and fixing errors and best practices. In the course, you will set up a sandbox environment and learn how to use RStudio Team through practical exercises. We provide you with a virtual environment in the cloud that you can connect to via SSH and browser.
 
-An Pharma R Admin certification is avaible to those that complete the course.
+One idea is having an Pharma R Admin certification available to those that complete the course (under development).
+
+Keep an eye out for our workshops, panels and talks at R in Pharma 2022!
 
 #### Meeting notes
 
-Jan 27th 2022
+# Thur 12th of May 22.
+
+Topic: RinPharma: Pharma R Admin Task Force
+Date: May 12, 2022 12:01 PM Indiana (East)
+
+Meeting Recording:
+https://rstudio.zoom.us/rec/share/DcyUkx6Vkgkq9cwDeq2XY4k8M7odXkxngIUnIQsWkkfqqCr42vrcBOElTJNUptfo.j7SO3xzbtfmxfeOa
+
+Access Passcode: rinpharma_radmin_051222
 
 _**Notes**_
 
-
+WE decided on this being a quarterly meeting.

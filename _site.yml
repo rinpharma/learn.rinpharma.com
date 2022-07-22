@@ -33,14 +33,12 @@ navbar:
           href: 2021.html
     - text:  "Webinars"
       menu:
-        - text: "admiral"
-          href: admiral.html
+        - text: "R Center of Excellence"
+          href: R-Center-Excellence.html
         - text: "gt"
           href: gt.html
-        - text: "renv"
-          href: renv.html
-        - text: "versioncontrol"
-          href: versioncontrol.html
+        - text: "r4csr"
+          href: r4csr.html
     - icon: fab fa-github
       href: https://github.com/rstudio/distil
 output: distill::distill_article

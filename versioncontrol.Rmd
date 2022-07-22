@@ -1,9 +1,0 @@
----
-title: "R in Pharma git public webinar"
-description: |
-  Below you will find info on the git webinar
----
-
-R in Pharma _2022_ git webinar info is below:
-
-### Vidoes

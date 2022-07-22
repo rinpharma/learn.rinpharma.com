@@ -4,8 +4,28 @@ description: |
   Below you will find the links to the 2021 workshops
 ---
 
-R in Pharma _2021_ conf workshops are below. 
+R in Pharma _2021_ had 14 conf workshops:
+
+https://rinpharma.com/event/rinpharma2021/
+
+The recordings can be found at the R in Pharma youtube channel here:
 
 ### Vidoes
 
-## Python
+https://www.youtube.com/c/RinPharma/
+
+## Unleash Shiny
+
+https://www.youtube.com/watch?v=p6ilISM_70U&ab_channel=RinPharma
+
+## SafetyGraphics
+
+https://www.youtube.com/watch?v=wa3NHKazyew&ab_channel=RinPharma
+
+## Tidy Transcriptomics
+
+https://www.youtube.com/watch?v=lpX-dDM7GYk
+
+## RStudio Connect - Admin
+
+https://www.youtube.com/watch?v=H__CTvkI-8w&ab_channel=RinPharma

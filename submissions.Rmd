@@ -1,21 +1,9 @@
 ---
 title: "R in Pharma Submissions Perspectives"
 description: |
-  Below you will find info on doing submissions in R from various learner profiles
+  Below you will find info on doing submissions in R
 ---
 
-Perspectives & Roles of people engaged in submissions Process:
+### Presentation
 
-Stats Programming
-
-Regulatory Reviewer
-
-Medical Writing
-
-IT
-
-R Admin
-
-### Vidoes
-
-## Python
+https://colorado.rstudio.com/rsc/Transitioning_R_FDA_Submissions/Transitioning_R_FDA_Submissions.html#1

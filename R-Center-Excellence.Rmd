@@ -1,0 +1,11 @@
+---
+title: "Building an R Center of Excellence | Data Science Hangout | Mike Smith, Pfizer"
+description: |
+  Below you will find info on the Pfizer webinar
+---
+
+R in Pharma _2022_ Building an R Center of Excellence | Data Science Hangout | Mike Smith, Pfizer webinar info is below:
+
+### Vidoes
+
+https://www.youtube.com/watch?v=Dy1R2-jEeJQ&ab_channel=RStudio

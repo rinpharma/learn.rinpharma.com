@@ -1,9 +1,0 @@
----
-title: "R in Pharma renv public webinar"
-description: |
-  Below you will find info on the renv webinar
----
-
-R in Pharma _2022_ renv webinar info is below:
-
-### Vidoes

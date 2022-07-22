@@ -12,7 +12,7 @@ Our hope is that learn.rinpharma.com will help pharma professionals learn the la
 
 Our articles will help gain new knowledge and skills in a variety of ways, from engaging video lectures, write-ups and hands-on cloud environments with live code with no installation required
 
-Each lab includes challenges with step-by-step instructions and access to pre-configured cloud environments. This gives you an efficient way to practice what you are learning and expand knowledge beyond just reading.
+Our soon to be created labs will include challenges with step-by-step instructions and access to pre-configured cloud environments. This will give you an efficient way to practice what you are learning and expand knowledge beyond just reading. Keep an eye out for this in 2023/2024.
 
 ### Community Adoption
 

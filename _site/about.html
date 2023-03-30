@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -787,6 +788,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1028,10 +1030,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1863,9 +1861,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1877,6 +1887,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1976,6 +2011,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1998,7 +2035,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2195,7 +2232,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .distill-site-header {
     --title-size:       18px;    
     --text-color:       #ffffff; /* edited */
-    --text-size:        15px;
+    --text-size:        13px;
     --hover-color:      #1b4776; /* edited */
     --bkgd-color:       #7daee3; /* edited */
   }</style>
@@ -2354,7 +2391,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2427,6 +2464,7 @@ Webinars
 <a href="r4csr.html">r4csr</a>
 </div>
 </div>
+<a href="r-for-clinical-workflows.html">R for Clinical Workflows</a>
 <a href="https://github.com/rstudio/distil">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
@@ -2451,53 +2489,18 @@ Webinars
 <li>learn.rinpharma.com information</li>
 </ul>
 <h3 id="about">About</h3>
-<p>Our hope is that learn.rinpharma.com will help pharma professionals
-learn the latest data science skills via community discussions on key
-ideas/initiatives, hands on workshops and online learnings. Like our
-conference, we hope for this page to provide free, world-class education
-where you can learn by doing and build confidence in practical R in
-Pharma skills. We will try to provide live environments where you can
-play with the code/analysis to help professionals develop the skills
-needed for the top priorities in the drug development space.</p>
-<p>Our articles will help gain new knowledge and skills in a variety of
-ways, from engaging video lectures, write-ups and hands-on cloud
-environments with live code with no installation required</p>
-<p>Our soon to be created labs will include challenges with step-by-step
-instructions and access to pre-configured cloud environments. This will
-give you an efficient way to practice what you are learning and expand
-knowledge beyond just reading. Keep an eye out for this in
-2023/2024.</p>
+<p>Our hope is that learn.rinpharma.com will help pharma professionals learn the latest data science skills via community discussions on key ideas/initiatives, hands on workshops and online learnings. Like our conference, we hope for this page to provide free, world-class education where you can learn by doing and build confidence in practical R in Pharma skills. We will try to provide live environments where you can play with the code/analysis to help professionals develop the skills needed for the top priorities in the drug development space.</p>
+<p>Our articles will help gain new knowledge and skills in a variety of ways, from engaging video lectures, write-ups and hands-on cloud environments with live code with no installation required</p>
+<p>Our soon to be created labs will include challenges with step-by-step instructions and access to pre-configured cloud environments. This will give you an efficient way to practice what you are learning and expand knowledge beyond just reading. Keep an eye out for this in 2023/2024.</p>
 <h3 id="community-adoption">Community Adoption</h3>
-<p>How hope is that this effort will help expand the communities
-curriculum through rinpharma blended learning efforts. We hope this will
-provide pharmas with access to high-quality, domain-specific training
-materials and further micro-courses can be built with this material.</p>
-<h2 id="the-following-tools-are-used-in-our-learning-efforts">The
-following tools are used in our learning efforts:</h2>
+<p>How hope is that this effort will help expand the communities curriculum through rinpharma blended learning efforts. We hope this will provide pharmas with access to high-quality, domain-specific training materials and further micro-courses can be built with this material.</p>
+<h2 id="the-following-tools-are-used-in-our-learning-efforts">The following tools are used in our learning efforts:</h2>
 <ul>
-<li><a href="https://rstudio.cloud/"><code>RStudio Cloud</code></a>:
-<code>RStudio Cloud</code> is a cRStudio Cloud is a lightweight,
-cloud-based solution that allows anyone to do, share, teach and learn
-data science online</li>
-<li><a
-href="http://rmarkdown.rstudio.com/index.html"><code>Rmarkdown</code></a>:
-<code>Rmarkdown</code> is a package for <code>R</code> that combines
-simple <code>markdown</code> authoring tools for formatting text with
-chunks of <code>R</code> code; when compiled using <a
-href="http://yihui.name/knitr/"><code>knitr</code></a> the resulting
-output is a formatted document that contains the results of executing
-the embedded <code>R</code> code. Although <code>Rmarkdown</code> can
-produce files in a variety of formats, the two of particular interest in
-this project are <code>html</code> and <code>pdf</code> formats.</li>
-<li><code>R Packages</code>: One of the strengths of <code>R</code> is
-the availability of packages of <code>R</code> functions that are
-designed to work with data. The materials in this project, for example,
-use the <a
-href="https://rstudio.github.io/distill/"><code>Distill</code></a>
-package to create our online learnings.</li>
+<li><a href="https://rstudio.cloud/"><code>RStudio Cloud</code></a>: <code>RStudio Cloud</code> is a cRStudio Cloud is a lightweight, cloud-based solution that allows anyone to do, share, teach and learn data science online</li>
+<li><a href="http://rmarkdown.rstudio.com/index.html"><code>Rmarkdown</code></a>: <code>Rmarkdown</code> is a package for <code>R</code> that combines simple <code>markdown</code> authoring tools for formatting text with chunks of <code>R</code> code; when compiled using <a href="http://yihui.name/knitr/"><code>knitr</code></a> the resulting output is a formatted document that contains the results of executing the embedded <code>R</code> code. Although <code>Rmarkdown</code> can produce files in a variety of formats, the two of particular interest in this project are <code>html</code> and <code>pdf</code> formats.</li>
+<li><code>R Packages</code>: One of the strengths of <code>R</code> is the availability of packages of <code>R</code> functions that are designed to work with data. The materials in this project, for example, use the <a href="https://rstudio.github.io/distill/"><code>Distill</code></a> package to create our online learnings.</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

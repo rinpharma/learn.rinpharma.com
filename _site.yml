@@ -39,6 +39,8 @@ navbar:
           href: gt.html
         - text: "r4csr"
           href: r4csr.html
+    - text: "R for Clinical Workflows"
+      href: r-for-clinical-workflows.html
     - icon: fab fa-github
       href: https://github.com/rstudio/distil
 output: distill::distill_article

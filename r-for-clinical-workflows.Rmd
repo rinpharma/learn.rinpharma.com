@@ -12,11 +12,15 @@ We're excited to provide online tutorials designed for clinical workflows to hel
 
 Each part has a live and interactive Posit Cloud environment preconfigured. Please click the "Launch Posit Cloud" to work with the live code. Please feel free to copy the repo and customize the examples for your own internal pharma-specific workflows!
 
-## Creating ADaM Subject-Level Analysis Datasets (ADSL) with the Pharmaverse, Part 1
+## Creating ADaM Subject-Level Analysis Datasets (ADSL) with the Pharmaverse
 
 [![Launch RStudio Cloud](https://img.shields.io/badge/launch-cloud-75aadb?style=flat&logo=rstudio)](https://posit.cloud/content/5698018)
 
 This tutorial is based on the Clinical Reporting in R workshop from R/Pharma 2022, led by [Christina Fillmore](https://uk.linkedin.com/in/christina-fillmore-38a19b41?trk=public_post-text) (GSK), [Ellis Hughes](https://www.linkedin.com/in/ellishughes) (GSK), and [Thomas Neitmann](https://ch.linkedin.com/in/thomasneitmann) (Roche). Watch the [full recording on YouTube](https://www.youtube.com/watch?v=9eod8MLF5ys), check out the [workshop materials](https://github.com/pharmaverse/r-pharma2022), and learn more about the [pharmaverse](https://pharmaverse.org/) and [R/Pharma](https://rinpharma.com/).
 
-Locate the tutorial in the Cloud project: `/cloud/project/tutorials/creating-adam-adsl-part1.qmd`
+Click 'Launch RStudio Cloud' to oepn the project and locate the two-part tutorial in the Cloud project:
+
+`/cloud/project/tutorials/creating-adam-adsl-part1.qmd`
+
+`/cloud/project/tutorials/creating-adam-adsl-part2.qmd`
 

@@ -50,17 +50,16 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  { color: #00769e; background-color: #f1f3f5; }
+  {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #657422; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #00769e; } /* ControlFlow */
+code span.cf { color: #007ba5; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -74,9 +73,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #00769e; } /* Keyword */
+code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #00769e; } /* Other */
+code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -458,8 +457,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -788,7 +787,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1030,6 +1028,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
   }
 
   .figure .caption {
@@ -1861,21 +1863,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
-          $(this).html(fn.shadowRoot.querySelector("sup"))
-          $(this).id = fn.id
-          fn.remove()
-        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1887,31 +1877,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
-
-      // fix footnotes in tables (#411)
-      // replacing broken distill.pub feature
-      $('table d-footnote').each(function() {
-        // we replace internal showAtNode methode which is triggered when hovering a footnote
-        this.hoverBox.showAtNode = function(node) {
-          // ported from https://github.com/distillpub/template/pull/105/files
-          calcOffset = function(elem) {
-              let x = elem.offsetLeft;
-              let y = elem.offsetTop;
-              // Traverse upwards until an `absolute` element is found or `elem`
-              // becomes null.
-              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
-                  x += elem.offsetLeft;
-                  y += elem.offsetTop;
-              }
-
-              return { left: x, top: y };
-          }
-          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
-          const bbox = node.getBoundingClientRect();
-          const offset = calcOffset(node);
-          this.show([offset.left + bbox.width, offset.top + bbox.height]);
-        }
-      })
 
       // clear polling timer
       clearInterval(tid);
@@ -2011,8 +1976,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
-      // ignore leaflet img layers (#106)
-      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -2035,7 +1998,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
       });
     }
 
@@ -2391,7 +2354,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2485,33 +2448,59 @@ Webinars
 
 
 <div class="d-article">
-<p><strong>Next Meeting is:</strong> Thursday, July 28 12:00 – 1:00pm est, Monthly on the last Thursday</p>
-<p>Shiny has always been a big part of RinPharma. Joe Cheng did a Keynote in 2018 (<a href="https://rinpharma.com/publication/rinpharma_33/" class="uri">https://rinpharma.com/publication/rinpharma_33/</a>), helped create Shinymeta in 2019, we held the popular “Unleash Shiny” in 2020 that sold out in hours and we held multiple workshops &amp; talks on Shiny in 2021! In 2020 we announced our future efforts around Shiny at the RStudio conference: <a href="https://www.youtube.com/watch?v=3sU_ehLtQWM" class="uri">https://www.youtube.com/watch?v=3sU_ehLtQWM</a></p>
-<p>We are now So excited to announce the launch of the “Shiny for Submissions” Task Force here in 2022! We are planning to have a monthly meeting (last thur) and quarterly workshops for the public. The workshop and learnings will be featured for the public on learn.rinpharma.com.</p>
+<p><strong>Next Meeting is:</strong> Thursday, July 28 12:00 – 1:00pm
+est, Monthly on the last Thursday</p>
+<p>Shiny has always been a big part of RinPharma. Joe Cheng did a
+Keynote in 2018 (<a
+href="https://rinpharma.com/publication/rinpharma_33/"
+class="uri">https://rinpharma.com/publication/rinpharma_33/</a>), helped
+create Shinymeta in 2019, we held the popular “Unleash Shiny” in 2020
+that sold out in hours and we held multiple workshops &amp; talks on
+Shiny in 2021! In 2020 we announced our future efforts around Shiny at
+the RStudio conference: <a
+href="https://www.youtube.com/watch?v=3sU_ehLtQWM"
+class="uri">https://www.youtube.com/watch?v=3sU_ehLtQWM</a></p>
+<p>We are now So excited to announce the launch of the “Shiny for
+Submissions” Task Force here in 2022! We are planning to have a monthly
+meeting (last thur) and quarterly workshops for the public. The workshop
+and learnings will be featured for the public on
+learn.rinpharma.com.</p>
 <h2 id="meeting-notes">Meeting notes</h2>
 <h1 id="thur-26th-of-may-22.">Thur 26th of May 22.</h1>
-<p>Topic: RinPharma: Shiny for Submissions Task Force
-Date: May 26, 2022 12:01 PM Indiana (East)</p>
-<p>Meeting Recording:
-<a href="https://rstudio.zoom.us/rec/share/rdHnVdcREL2p8YfAYA-U3ZT5ozuedRAmNwutyLYK86X51M9ueMXBdFsczNm4BmuT.pjXLfUU9hWFB8OML" class="uri">https://rstudio.zoom.us/rec/share/rdHnVdcREL2p8YfAYA-U3ZT5ozuedRAmNwutyLYK86X51M9ueMXBdFsczNm4BmuT.pjXLfUU9hWFB8OML</a></p>
+<p>Topic: RinPharma: Shiny for Submissions Task Force Date: May 26, 2022
+12:01 PM Indiana (East)</p>
+<p>Meeting Recording: <a
+href="https://rstudio.zoom.us/rec/share/rdHnVdcREL2p8YfAYA-U3ZT5ozuedRAmNwutyLYK86X51M9ueMXBdFsczNm4BmuT.pjXLfUU9hWFB8OML"
+class="uri">https://rstudio.zoom.us/rec/share/rdHnVdcREL2p8YfAYA-U3ZT5ozuedRAmNwutyLYK86X51M9ueMXBdFsczNm4BmuT.pjXLfUU9hWFB8OML</a></p>
 <p>Access Passcode: rinpharma_shiny_052622</p>
-<p><a href="https://www.youtube.com/watch?v=mh0HMPqLyhQ&amp;ab_channel=RinPharma" class="uri">https://www.youtube.com/watch?v=mh0HMPqLyhQ&amp;ab_channel=RinPharma</a></p>
+<p><a
+href="https://www.youtube.com/watch?v=mh0HMPqLyhQ&amp;ab_channel=RinPharma"
+class="uri">https://www.youtube.com/watch?v=mh0HMPqLyhQ&amp;ab_channel=RinPharma</a></p>
 <h1 id="thur-24th-of-feb-22.">Thur 24th of Feb 22.</h1>
-<p>Topic: RinPharma: Shiny for Submissions Task Force
-Date: Feb 24, 2022 11:55 AM Indiana (East)</p>
-<p>Meeting Recording:
-<a href="https://rstudio.zoom.us/rec/share/R0_njE53ZMyIrpRQs3HlpzmVf-umASnFS503IP3pNviPGejdlk6jOqq-SYDH9sXp.74zgr-HG7JRskh24" class="uri">https://rstudio.zoom.us/rec/share/R0_njE53ZMyIrpRQs3HlpzmVf-umASnFS503IP3pNviPGejdlk6jOqq-SYDH9sXp.74zgr-HG7JRskh24</a></p>
+<p>Topic: RinPharma: Shiny for Submissions Task Force Date: Feb 24, 2022
+11:55 AM Indiana (East)</p>
+<p>Meeting Recording: <a
+href="https://rstudio.zoom.us/rec/share/R0_njE53ZMyIrpRQs3HlpzmVf-umASnFS503IP3pNviPGejdlk6jOqq-SYDH9sXp.74zgr-HG7JRskh24"
+class="uri">https://rstudio.zoom.us/rec/share/R0_njE53ZMyIrpRQs3HlpzmVf-umASnFS503IP3pNviPGejdlk6jOqq-SYDH9sXp.74zgr-HG7JRskh24</a></p>
 <p>Access Passcode: rinpharma_shiny_022822</p>
 <h1 id="jan-27th-2022">Jan 27th 2022</h1>
 <p><em><strong>Notes</strong></em></p>
-<p>For our first meeting, we reviewed the Current State of Shiny for submissions as detailed here:</p>
-<p><a href="https://docs.google.com/document/d/1Koi0K_2P5Y827eAc2HzhYGWTE4Ws60t2iTFwVxUBkWU/edit?usp=sharing">Current State</a></p>
-<p>We then discussed as a group, the areas of focus as highlighted below:</p>
-<p><img src="images/focus.png" alt="Focus Areas" />
-The top 2 areas being data exploration and dynamic data displays. Open the image in a new tab to see it larger.</p>
-<p>We then discussed these items in detail as outlined in the meeting mins here:</p>
-<p><a href="https://docs.google.com/document/d/17hInpK3B9dckXvf9wCNANl31chBmZ_TGwDOlkuzHfTE/edit?usp=sharing">Minutes</a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>For our first meeting, we reviewed the Current State of Shiny for
+submissions as detailed here:</p>
+<p><a
+href="https://docs.google.com/document/d/1Koi0K_2P5Y827eAc2HzhYGWTE4Ws60t2iTFwVxUBkWU/edit?usp=sharing">Current
+State</a></p>
+<p>We then discussed as a group, the areas of focus as highlighted
+below:</p>
+<p><img src="images/focus.png" alt="Focus Areas" /> The top 2 areas
+being data exploration and dynamic data displays. Open the image in a
+new tab to see it larger.</p>
+<p>We then discussed these items in detail as outlined in the meeting
+mins here:</p>
+<p><a
+href="https://docs.google.com/document/d/17hInpK3B9dckXvf9wCNANl31chBmZ_TGwDOlkuzHfTE/edit?usp=sharing">Minutes</a></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

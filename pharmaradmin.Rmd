@@ -3,7 +3,7 @@ title: "Pharma R Admin"
 description: |
   Information about the Pharma R Admin Task Force
 ---
-**Next Meeting is:** Thursday, September 8⋅12:00 – 1:00pm, Monthly on the second Thursday
+**Next Meeting is:** Thursday, June 14⋅12:00 – 1:00pm, 2023... Usually Monthly on the second Thursday
 
 R in Pharma has focused on administering since our fist gathering. The Pharma R Admin Task Force is focused on bringing together R admins in pharma. Our focus is tackling administering open source in various pharma settings. Our group also helps train R admins via our training course held quarterly (planned). The trainings help provide admins with virtual machines they can use to exploring R, packages and RStudio. The course will provide insights into identifying and fixing errors and best practices. In the course, you will set up a sandbox environment and learn how to use RStudio Team through practical exercises. We provide you with a virtual environment in the cloud that you can connect to via SSH and browser.
 
